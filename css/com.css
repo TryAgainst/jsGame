@@ -1,0 +1,147 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+/*页头*/
+.topline {
+	position: fixed;
+	top:0px;
+	height: 41px;
+	border-top: 3px solid #ff8500;
+	border-bottom: 1px solid #edeef0;
+	background-color: #fcfcfc;
+	line-height: 41px;
+	margin-top: 0px;
+	width: 100%;
+	font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+	font-size: 13px;
+}
+
+.topline .item_left {
+	float: left;
+	position: relative;
+	color:#4c4c4c;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.topline .item_right {
+	float: right;
+	position: relative;
+	color:#4c4c4c;
+	padding-left: 15px;
+	padding-right: 25px;
+}
+.topline .item_left:hover,.topline .item_right:hover
+{
+	color: orangered;
+	background: #E3E3E3;
+	cursor:pointer;
+}
+/**
+ * 页面底部
+ */
+.footer
+{
+	clear: both;
+	position: fixed;
+	display: block;
+	bottom: 0px;
+	width: 100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	color: #434343;
+	border-top: 1px solid #BFBFBF;
+	background-color: #F2F2F2;
+	border-bottom: 5px solid #ff8500;
+}
+/*
+链接案例页面的盒子，位居页面左侧
+*/
+.linkBox {
+	position: absolute;
+	left:25px;
+	top: 120px;
+	border: solid 1px gray;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 250px;
+	font-size: 13px;
+	z-index: 100;
+	overflow: hidden;
+	background:#CCF1FF;
+	font-size: 15;
+}
+
+.linkBox a,
+.linkBox a:visited {
+	text-decoration: none;
+	color: darkslategray;
+	display: block;
+	padding: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	font-size: 15px;
+}
+
+.linkBox a:hover {
+	color: #095EDE;
+	background: #D8FF72;
+	font-size: 15px;
+}
+.linkBox a:hover::before
+{
+	content: url(go.png);
+	color: red;
+}
+.linkBox a:first-child
+{
+	background-color: #00BAFF;
+	text-align: center;
+}
+.linkBox a:first-child:hover
+{
+    color:white;
+	font-weight: bold;
+}
+
+
+/**
+ * 页面标题与知识点备注
+ */
+h1.title {
+	position: relative;
+	text-align: center;
+	color: blue;
+	margin: 65px auto  25px;
+}
+
+#tip {
+	width: 55vw;
+	border:dotted 1px lightgray;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	margin: 25px auto;
+	box-sizing: border-box;
+	font-size: 15px;
+	line-height: 35px;
+	background: #F0E1BD;
+}
+
+#tip ol{
+	padding-left: 4em;
+	text-align: left;
+	font-size: 15px;
+}
+#tip div{
+	text-indent:1em;
+	text-align: left;
+	font-size:25px;
+	font-weight: bold;
+	color: firebrick;
+	line-height: 50px;
+}
+

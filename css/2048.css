@@ -1,0 +1,53 @@
+body {
+	background: #834C4F;
+	margin: 0 auto;
+}
+
+#score {
+	margin: 10vh auto 0;
+	text-align: center;
+	font-size: 35px;
+}
+
+#score span {
+	color: #B6B582;
+}
+
+#map {
+	margin: 10px auto;
+	background: #834C4F;
+	width: 455px;
+	height: 455px;
+	padding: 5px;
+}
+
+#map>div {
+	clear: both;
+}
+
+#map>div>div {
+	float: left;
+	margin: 5px;
+	border: solid 1px #DAC0C2;
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 38px;
+	font-weight: bold;
+	background: #886C64;
+}
+
+.beginButton {
+	margin: 15px auto;
+	text-align: center;
+	border-radius: 10px;
+	height: 35px;
+	width: 150px;
+	background: #FF6600;
+	line-height: 35px;
+	border: solid 1px #FF6600;
+	color: white;
+	cursor: pointer;
+}

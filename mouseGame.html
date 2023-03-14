@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>打地鼠游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/mouseGame.css" />
+	</head>
+	<body>
+		<h1 class="title">web交互应用综合案例：打地鼠游戏</h1>
+		<div id="tip">
+			<div>要点提示：</div>
+			<ol>
+				<li>每秒钟要做的事情</li>
+				<li>鼠标单击单元格要做的事情</li>
+				<li>鼠标单击开始按钮要做的事情</li>
+				<li>各项事情连接的纽带</li>
+			</ol>
+			<div>技能提示：</div>
+			<ol>
+				<li>随机产生地鼠：利用Math对象的随机函数</li>
+				<li>单元格是否有地鼠的判断：利用单元格的自定义属性</li>
+			</ol>
+		</div>
+		<!--地鼠出现的声音-->
+		<div style="display: none;">
+			<audio id="mshow" src="rsc/show.mp3"></audio>
+		</div>
+		<!--地鼠被打中的声音-->
+		<div style="display: none;">
+			<audio id="mcry" src="rsc/oh.mp3"></audio>
+		</div>
+		<div class="main">
+			<div class="head">
+				<div>00:<span id="time">00</span></div>
+				<div>得分：<span id="score">0</span></div>
+				<div id="begin" v="0">开&nbsp;始</div>
+			</div>
+			<!--出现地鼠的4*4单元格-->
+			<div class="table">
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<!--引用js文件-->
+		<script type="text/javascript" src="js/msgame.js"></script>
+		<script type="text/javascript">
+			gameInit();
+		</script>
+
+		<!--************以下两行代码切勿删除或修改**********-->
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+	</body>
+</html>
